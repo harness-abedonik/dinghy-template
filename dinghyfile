@@ -1,0 +1,19 @@
+{
+  "application": "training",
+  "pipelines": [
+      {
+        "application": "training",
+        "keepWaitingPipelines": false,
+        "name": "wait",
+        "lastModifiedBy": "john.smith",
+        "limitConcurrent": true,
+        "stages": [
+          {{ module "stage.wait.module" 
+              "refId" 1
+          }}
+        ],
+        "triggers": [],
+        "updateTs": "1567185128000"
+      }
+   ]
+}
